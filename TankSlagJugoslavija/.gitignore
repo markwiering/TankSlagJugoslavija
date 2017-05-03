@@ -3,6 +3,8 @@
 
 # Bestanden die te groot zijn
 *.VC.db
+*.uasset
+*.zip
 
 # Compiled Object files
 *.slo
