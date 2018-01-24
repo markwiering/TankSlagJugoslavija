@@ -6,6 +6,9 @@
 *.uasset
 *.zip
 
+# Bestanden die er toch op moeten
+!Content/De_Tank/*.uasset
+
 # Compiled Object files
 *.slo
 *.lo
