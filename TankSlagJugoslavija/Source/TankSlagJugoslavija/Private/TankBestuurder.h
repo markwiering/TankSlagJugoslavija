@@ -10,7 +10,7 @@
  * 
  */
 UCLASS()
-class ATankBestuurder : public APlayerController
+class TANKSLAGJUGOSLAVIJA_API ATankBestuurder : public APlayerController
 {
 	GENERATED_BODY()
 public:

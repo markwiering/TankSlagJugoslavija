@@ -10,10 +10,13 @@
  * 
  */
 UCLASS()
-class AKI_TankBestuurder : public AAIController
+class TANKSLAGJUGOSLAVIJA_API AKI_TankBestuurder : public AAIController
 {
 	GENERATED_BODY()
 public:
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
 	ATank* VerkrijgBestuurdeTank() const;
 	ATank* VerkrijgSpelersTank() const;
 	void BeginPlay() override;

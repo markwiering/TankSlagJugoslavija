@@ -31,9 +31,27 @@ void AKI_TankBestuurder::BeginPlay()
 	}
 }
 
+// Called every frame
+void AKI_TankBestuurder::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	if (VerkrijgBestuurdeTank())
+	{
+		// Beweeg naar de speler toe
+
+		// Richt op de speler
+		VerkrijgBestuurdeTank()->RichtOp(VerkrijgBestuurdeTank()->GetActorLocation());
+
+		// Vuur indien klaar
+
+	}
+	//ATank = VerkrijgBestuurdeTank->RichtOp();
+}
+
 ATank* AKI_TankBestuurder::VerkrijgBestuurdeTank() const
 {
 	return Cast<ATank>(GetPawn());
+	//return Cast<ATank>(GetWorld()->GetFirstPlayerController()->GetControlledPawn());
 }
 
 ATank* AKI_TankBestuurder::VerkrijgSpelersTank() const
